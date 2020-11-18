@@ -6,7 +6,8 @@
 
 ## Goals for this site
 
-    1. The biggest goal for this site is to have a MVP up by the end of 2020 which gives
-    me about 2 months to work on it in my spare time. This first launch doesn't need to
-    be absolutely perfect as I am trying to hold myself to getting something done that is
-    good but can still be worked on as my web development skills progress.
+    1. Initial Launch
+        1. The biggest goal for this site is to have a MVP up by the end of 2020 which givesme about 2 months to work on it in my spare time This first launch doesn't need to be absolutely perfect as I am trying to hold myself to getting something done that is good but can still be worked on as my web development skills progress.
+        1. The second biggest goal of the site has to do with the content. The site would ideally feature 6 projects I am proud to showcase that show that I know what I am doing and also show that while I may not be the best web developer rigth away, I am quickly learning and always looking to improve my craft. It may not be doable to have 6 WOW worthy applications done by the end of the year, but I think I can get at least 3 done and ready to be hosted/shown in my portfolio which will give me a strong start.
+            1. Finish up movie project.
+        1. This is the last part that has to do with the initial launch but also is very important. I need to sit down after getting the site layout how I like it and decide on a color scheme to apply to everything. I already have a few colors picked out but will need to make sure what I put together is cohesive and eye catching.
