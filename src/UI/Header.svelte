@@ -2,7 +2,7 @@
 </script>
 
 <style>
-  header {
+  /* header {
     color: white;
     position: fixed;
     left: 0;
@@ -14,14 +14,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
-  }
+  } */
 
-  header nav a {
+  /* header nav a {
     color: white;
     text-decoration: none;
     border-bottom: solid 2px #00ebc7;
-  }
+  } */
 
   header nav a + a {
     margin-left: 10px;

@@ -15,7 +15,9 @@
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100;
+    margin: auto;
     margin-bottom: 5rem;
+    max-width: 700px;
   }
 
   .about-me {
@@ -31,7 +33,7 @@
   }
 
   h1 {
-    animation: fadeInAnimation ease 4s;
+    animation: fadeInAnimation ease 6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
