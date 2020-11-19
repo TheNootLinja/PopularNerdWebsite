@@ -2,7 +2,7 @@
 </script>
 
 <style>
-  header {
+  /* header {
     color: white;
     position: fixed;
     left: 0;
@@ -14,13 +14,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
-  header nav a {
+  /* header nav a {
     color: white;
     text-decoration: none;
     border-bottom: solid 2px #00ebc7;
-  }
+  } */
 
   header nav a + a {
     margin-left: 10px;
@@ -36,13 +36,33 @@
     margin-left: 2rem;
     padding-right: 6px;
   }
+
+  div {
+    width: 35px;
+    height: 5px;
+    background-color: #00ebc7;
+    margin: 6px 20px;
+    display: none;
+  }
+
+  @media only screen and (max-width: 500px) {
+    a {
+      display: none;
+    }
+    div {
+      display: block;
+    }
+  }
 </style>
 
 <header>
   <h1 class="fake-logo">Popular Nerd</h1>
   <nav>
-    <a href="#">About</a>
+    <a href="#aboutme">About</a>
     <a href="#">Portfolio</a>
     <a href="#" class="last">Contact</a>
+    <div />
+    <div />
+    <div />
   </nav>
 </header>
