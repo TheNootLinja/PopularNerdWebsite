@@ -1,4 +1,4 @@
-# This is the source code for popularnerd.tech.
+# This is the source code for popularnerd.tech
 
 ## Tech Stack
 
@@ -18,7 +18,7 @@
          get at least 3 done and ready to be hosted/shown in my portfolio which will give me a strong start.
             1. React Movies Project
             2. Popular Nerd Website built in Svelte
-            3. ???
+            3. Monster Rolodex - Built in React - https://gifted-shirley-d8a43d.netlify.app/
         1. This is the last part that has to do with the initial launch but also is very important. I need to
         sit down after getting the site layout how I like it and decide on a color scheme to apply to everything.
         I already have a few colors picked out but will need to make sure what I put together is cohesive and eye
