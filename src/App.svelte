@@ -1,6 +1,7 @@
 <script>
   import Header from "./UI/Header.svelte";
   import ProjectGrid from "./ProjectGrid.svelte";
+  import ContactInformation from "./ContactInformation.svelte";
 </script>
 
 <style>
@@ -58,24 +59,21 @@
   <!-- TODO: Want to put the about me section inside of a card -->
   <p class="about-me" id="aboutme">
     And I am a full-stack developer from Michigan with a love for coffee (or
-    maybe just caffeine). My educational background is in IT Support and am a
-    self taught programmer with experience in python, c++, and c#, but most of
-    all, web development. when I started teaching myself web development I
-    really found what I had a passion for. The feeling of getting to see
-    something come to life piece by piece as quickly as I am able to put it
-    together in my mind. Not only am I able to participate in setting up how
-    code will function behind the scenes, but I also get to design how I think
-    it should look on the front-end.
+    maybe just caffeine). I perform web development under the company name
+    Popular Nerd. My educational background is in IT Support and am a self taught
+    programmer with experience in python, c++, and c#, but most of all, web
+    development. when I started teaching myself web development I really found
+    what I had a passion for. The feeling of getting to see something come to
+    life piece by piece as quickly as I am able to put it together in my mind.
+    Not only am I able to participate in setting up how code will function
+    behind the scenes, but I also get to design how I think it should look on
+    the front-end.
   </p>
 </main>
-
-<h2>Projects</h2>
 <!-- This will be handled by the ProjectGrid component -->
 <ProjectGrid />
-<h2>
-  This is where the contact information and things like github would be
-  displayed here.
-</h2>
+
+<ContactInformation />
 <!-- Possibly a contact info component -->
 <h2>Possibly a footer at this point in the page</h2>
 <!--  -->

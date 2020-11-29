@@ -23,3 +23,11 @@
         sit down after getting the site layout how I like it and decide on a color scheme to apply to everything.
         I already have a few colors picked out but will need to make sure what I put together is cohesive and eye
         atching.
+
+## Current TODO list for site
+
+    [] Make changes to header to make hamburger/mobile menu clickable to display dropdown.
+    [] Compile a list of other related interests that I could put into the about me description.
+    [] Get some good photos of myself for including in the about me.
+        [] Coffee
+        [] Picture of me at desk working
