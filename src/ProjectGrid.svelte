@@ -12,14 +12,16 @@
 
   .project-card {
     /* background-color: gray; */
-    height: 15rem;
+    height: 85%;
+    width: 90%;
     text-align: center;
+    margin: auto;
   }
 
   .project-container {
     background-color: rgb(218, 218, 218);
     padding: 0px 5px;
-    height: fit-content;
+    height: 11rem;
   }
 
   .noot-wear {

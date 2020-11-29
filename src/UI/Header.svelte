@@ -59,7 +59,7 @@
   <h1 class="fake-logo">Popular Nerd</h1>
   <nav>
     <a href="#aboutme">About</a>
-    <a href="#">Portfolio</a>
+    <a href="#projectgrid">Portfolio</a>
     <a href="#" class="last">Contact</a>
     <div />
     <div />

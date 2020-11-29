@@ -8,7 +8,7 @@
   main {
     color: #1b2d45;
     text-align: center;
-    margin: 7rem auto;
+    padding-top: 4rem;
   }
 
   h1 {
@@ -17,7 +17,7 @@
     font-size: 4em;
     font-weight: 100;
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     max-width: 700px;
   }
 
@@ -35,12 +35,12 @@
 
   span {
     color: #1b2d45;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 
   h1 {
-    animation: fadeInAnimation ease 6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
   }
 
   @keyframes fadeInAnimation {
@@ -60,16 +60,18 @@
   <p class="about-me" id="aboutme">
     And I am a full-stack developer from Michigan with a love for coffee (or
     maybe just caffeine). I perform web development under the company name
-    Popular Nerd. My educational background is in IT Support and am a self taught
-    programmer with experience in python, c++, and c#, but most of all, web
-    development. when I started teaching myself web development I really found
-    what I had a passion for. The feeling of getting to see something come to
-    life piece by piece as quickly as I am able to put it together in my mind.
-    Not only am I able to participate in setting up how code will function
-    behind the scenes, but I also get to design how I think it should look on
-    the front-end.
+    Popular Nerd. My educational background is in IT Support and am a self
+    taught programmer with experience in python, c++, and c#, but most of all,
+    the vast world of
+    <em><strong>web development</strong></em>. when I started teaching myself
+    web development I really found what I had a passion for. The feeling of
+    getting to see something come to life piece by piece as quickly as I am able
+    to put it together in my mind. Not only am I able to participate in setting
+    up how code will function behind the scenes, but I also get to design how I
+    think it should look on the front-end.
   </p>
 </main>
+<br id="projectgrid" />
 <!-- This will be handled by the ProjectGrid component -->
 <ProjectGrid />
 
