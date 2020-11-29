@@ -441,3 +441,13 @@ thead tr {
 tbody tr:last-child {
   box-shadow: none;
 }
+
+.dark {
+  --cardBg: var(--darkGrey);
+  --background: var(--black);
+  --textColor: var(--lightGrey);
+  --headerBackground: var(--darkGrey);
+  --buttonTextColor: var(--black);
+  --footerBackground: var(--darkGrey);
+}
+
