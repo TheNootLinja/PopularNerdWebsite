@@ -1,5 +1,6 @@
 <script>
   import Header from "./UI/Header.svelte";
+  import ProjectGrid from "./ProjectGrid.svelte";
 </script>
 
 <style>
@@ -7,7 +8,6 @@
     color: #1b2d45;
     text-align: center;
     margin: 7rem auto;
-    height: 300rem;
   }
 
   h1 {
@@ -18,6 +18,10 @@
     margin: auto;
     margin-bottom: 5rem;
     max-width: 700px;
+  }
+
+  h2 {
+    padding-left: 5rem;
   }
 
   .about-me {
@@ -65,8 +69,9 @@
   </p>
 </main>
 
-<h2>This is where the portfolio projects would be</h2>
+<h2>Projects</h2>
 <!-- This will be handled by the ProjectGrid component -->
+<ProjectGrid />
 <h2>
   This is where the contact information and things like github would be
   displayed here.
