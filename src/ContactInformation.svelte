@@ -34,9 +34,13 @@
   <h2>Contact Information</h2>
   <div class="a-container">
     <a
-      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/">LinkedIn</a>
-    <a href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/">Github</a>
-    <a href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/">Popular
-      Nerd</a>
+      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/"
+      target="blank">LinkedIn</a>
+    <a
+      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/"
+      target="blank">Github</a>
+    <a
+      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/"
+      target="blank">Popular Nerd</a>
   </div>
 </div>
