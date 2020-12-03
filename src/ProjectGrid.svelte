@@ -25,19 +25,19 @@
   }
 
   .noot-wear {
-    background-image: url("./assets/project-thumbnails/noot-wear.png");
+    background-image: url("../assets/project-thumbnails/noot-wear.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .popular-nerd {
-    background-image: url("./assets/project-thumbnails/popularnerd.png");
+    background-image: url("../assets/project-thumbnails/popularnerd.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .monster-rolodex {
-    background-image: url("./assets/project-thumbnails/monster-rolodex.png");
+    background-image: url("../assets/project-thumbnails/monster-rolodex.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
