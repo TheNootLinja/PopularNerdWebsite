@@ -5,7 +5,7 @@
   h2 {
     text-align: center;
   }
-  div {
+  .container {
     height: 20rem;
   }
   span {
@@ -16,10 +16,27 @@
     margin: 0;
     margin-bottom: 5px;
   }
+  a {
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 2px #00ebc7;
+    font-weight: 700;
+  }
+
+  .a-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+  }
 </style>
 
-<div>
+<div class="container">
   <h2>Contact Information</h2>
-  <p><strong><span>Email: </span></strong>nicholaspeters73@gmail.com</p>
-  <p><strong><span>Github: </span></strong>https://github.com/TheNootLinja</p>
+  <div class="a-container">
+    <a
+      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/">Github</a>
+    <a href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/">Popular
+      Nerd</a>
+  </div>
 </div>

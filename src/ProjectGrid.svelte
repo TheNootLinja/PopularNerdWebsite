@@ -42,6 +42,9 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  h2 {
+    text-align: center;
+  }
   h3 {
     background-color: rgba(155, 155, 155, 0.7);
     width: 100%;

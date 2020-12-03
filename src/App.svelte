@@ -1,14 +1,16 @@
 <script>
-  import Header from "./UI/Header.svelte";
-  import ProjectGrid from "./ProjectGrid.svelte";
-  import ContactInformation from "./ContactInformation.svelte";
+  import Header from './UI/Header.svelte';
+  import ProjectGrid from './ProjectGrid.svelte';
+  import ContactInformation from './ContactInformation.svelte';
+
+  let mobMenuOpen = false;
 </script>
 
 <style>
   main {
     color: #1b2d45;
-    text-align: center;
     padding-top: 4rem;
+    margin: auto;
   }
 
   h1 {
@@ -19,6 +21,7 @@
     margin: auto;
     margin-bottom: 2rem;
     max-width: 700px;
+    text-align: center;
   }
 
   h2 {
@@ -26,11 +29,19 @@
   }
 
   .about-me {
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
     background: rgb(238, 238, 238);
-    padding: 3.5rem 1rem;
     box-shadow: 3px 3px 10px 0px #ccc;
+  }
+
+  .about-me h3 {
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+  }
+
+  .about-me p {
+    text-align: center;
   }
 
   span {
@@ -38,9 +49,6 @@
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-  }
-
-  h1 {
   }
 
   @keyframes fadeInAnimation {
@@ -57,24 +65,27 @@
 <main>
   <h1>My name is <span>Nicholas Peters</span></h1>
   <!-- TODO: Want to put the about me section inside of a card -->
-  <p class="about-me" id="aboutme">
-    And I am a full-stack developer from Michigan with a love for coffee (or
-    maybe just caffeine). I perform web development under the company name
-    Popular Nerd. My educational background is in IT Support and am a self
-    taught programmer with experience in python, c++, and c#, but most of all,
-    the vast world of
-    <em><strong>web development</strong></em>. when I started teaching myself
-    web development I really found what I had a passion for. The feeling of
-    getting to see something come to life piece by piece as quickly as I am able
-    to put it together in my mind. Not only am I able to participate in setting
-    up how code will function behind the scenes, but I also get to design how I
-    think it should look on the front-end.
-  </p>
+  <br id="aboutme" />
+  <div class="about-me">
+    <h3>About Me</h3>
+    <p>
+      And I am a full-stack developer from Michigan with a love for coffee (or
+      maybe just caffeine). My educational background is in IT Support and am a
+      self taught programmer with experience in python, c++, and c#, but most of
+      all, the vast world of
+      <em><strong>web development</strong></em>. when I started teaching myself
+      web development I really found what I had a passion for. The feeling of
+      getting to see something come to life piece by piece as quickly as I am
+      able to put it together in my mind. Not only am I able to participate in
+      setting up how code will function behind the scenes, but I also get to
+      design how I think it should look on the front-end.
+    </p>
+  </div>
 </main>
 <br id="projectgrid" />
 <!-- This will be handled by the ProjectGrid component -->
 <ProjectGrid />
-
+<br id="contact" />
 <ContactInformation />
 <!-- Possibly a contact info component -->
 <h2>Possibly a footer at this point in the page</h2>

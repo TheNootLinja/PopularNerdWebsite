@@ -62,7 +62,7 @@ button:focus {
 	border-color: #666;
 } */
 
-@import url("https://fonts.googleapis.com/css?family=Space+Mono:400|Work+Sans:400");
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400|Work+Sans:400');
 
 :root {
   /* Define Colors as colors */
@@ -91,8 +91,8 @@ button:focus {
   --line: solid 1px var(--lineColor);
 
   /* Type */
-  --headingFont: "Space Mono", monospace;
-  --bodyFont: "Work Sans", sans-serif;
+  --headingFont: 'Space Mono', monospace;
+  --bodyFont: 'Work Sans', sans-serif;
   --baseFontSize: 100%;
   --h1: 3.052em;
   --h2: 2.441em;
@@ -121,6 +121,7 @@ button:focus {
 html {
   font-size: var(--baseFontSize);
   box-sizing: border-box;
+  scroll-behavior: smooth;
 } /*18px*/
 
 *,
@@ -450,4 +451,3 @@ tbody tr:last-child {
   --buttonTextColor: var(--black);
   --footerBackground: var(--darkGrey);
 }
-

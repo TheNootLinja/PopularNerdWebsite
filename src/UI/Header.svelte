@@ -37,7 +37,7 @@
     padding-right: 6px;
   }
 
-  div {
+  .hb {
     width: 35px;
     height: 5px;
     background-color: #00ebc7;
@@ -45,24 +45,30 @@
     display: none;
   }
 
+  .hb-container {
+    display: none;
+    height: 35px;
+    width: fit-content;
+  }
+
   @media only screen and (max-width: 500px) {
     a {
       display: none;
     }
-    div {
+    .hb {
+      display: block;
+    }
+    .hb-container {
       display: block;
     }
   }
 </style>
 
 <header>
-  <h1 class="fake-logo">Popular Nerd</h1>
+  <h1 class="fake-logo">Nicholas Peters</h1>
   <nav>
     <a href="#aboutme">About</a>
-    <a href="#projectgrid">Portfolio</a>
-    <a href="#" class="last">Contact</a>
-    <div />
-    <div />
-    <div />
+    <a href="#projectgrid">Projects</a>
+    <a href="#contact" class="last">Contact</a>
   </nav>
 </header>
