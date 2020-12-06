@@ -1,7 +1,7 @@
 <script>
-  import Header from './UI/Header.svelte';
-  import ProjectGrid from './ProjectGrid.svelte';
-  import ContactInformation from './ContactInformation.svelte';
+  import Header from "./UI/Header.svelte";
+  import ProjectGrid from "./ProjectGrid.svelte";
+  import ContactInformation from "./ContactInformation.svelte";
 
   let mobMenuOpen = false;
 </script>
@@ -13,6 +13,10 @@
     margin: auto;
   }
 
+  h2 {
+    text-align: center;
+  }
+
   h1 {
     color: rgb(90, 90, 90);
     text-transform: uppercase;
@@ -22,10 +26,6 @@
     margin-bottom: 2rem;
     max-width: 700px;
     text-align: center;
-  }
-
-  h2 {
-    padding-left: 5rem;
   }
 
   .about-me {
@@ -42,6 +42,11 @@
 
   .about-me p {
     text-align: center;
+    margin: auto;
+  }
+
+  .skills {
+    height: 15rem;
   }
 
   span {
@@ -70,9 +75,10 @@
     <h3>About Me</h3>
     <p>
       And I am a full-stack developer from Michigan with a love for coffee (or
-      maybe just caffeine). My educational background is in IT Support and am a
-      self taught programmer with experience in python, c++, and c#, but most of
-      all, the vast world of
+      maybe just caffeine). I do freelance web development under the company name
+      of Popular Nerd. My educational background is in IT Support and am a self
+      taught programmer with experience in python, c++, and c#, but most of all,
+      the vast world of
       <em><strong>web development</strong></em>. when I started teaching myself
       web development I really found what I had a passion for. The feeling of
       getting to see something come to life piece by piece as quickly as I am
@@ -82,6 +88,10 @@
     </p>
   </div>
 </main>
+<br id="skillgrid" />
+<div class="skills">
+  <h2>Programming Skills</h2>
+</div>
 <br id="projectgrid" />
 <!-- This will be handled by the ProjectGrid component -->
 <ProjectGrid />

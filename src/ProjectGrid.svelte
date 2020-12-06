@@ -8,6 +8,7 @@
     grid-template-columns: repeat(3, 1fr);
     margin: auto;
     gap: 2rem;
+    background-color: rgb(218, 218, 218);
   }
 
   .project-card {
@@ -19,7 +20,7 @@
   }
 
   .project-container {
-    background-color: rgb(218, 218, 218);
+    /* background-color: rgb(218, 218, 218); */
     padding: 0px 5px;
     height: 11rem;
   }

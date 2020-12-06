@@ -33,7 +33,7 @@
   .fake-logo {
     font-size: 120%;
     margin: 0;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
     padding-right: 6px;
   }
 
