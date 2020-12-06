@@ -5,42 +5,44 @@
   h2 {
     text-align: center;
   }
-  .container {
-    height: 20rem;
-  }
-  span {
-  }
   p {
     text-align: center;
     padding: 0;
     margin: 0;
     margin-bottom: 5px;
   }
+
   a {
     color: black;
     text-decoration: none;
-    border-bottom: solid 2px #00ebc7;
     font-weight: 700;
   }
 
+  .container {
+    height: 20rem;
+  }
+
   .a-container {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .email {
+    outline: solid 2px #fae100;
+    width: fit-content;
+    margin: auto;
+    padding: 5px 10px;
   }
 </style>
 
 <div class="container">
-  <h2>Contact Information</h2>
+  <h2>Have an Idea?</h2>
+  <p>
+    If you have a project that you think we could work together on or you just
+    need a consult from a developer, feel free to contact me at the email below
+    and we can talk about what I can do to make your idea a reality.
+  </p>
   <div class="a-container">
-    <a
-      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/"
-      target="blank">LinkedIn</a>
-    <a
-      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/"
-      target="blank">Github</a>
-    <a
-      href="https://www.linkedin.com/in/nicholas-peters-24302b1a4/"
-      target="blank">Popular Nerd</a>
+    <p class="email">Email: popularnerddev@outlook.com</p>
+    <p />
   </div>
 </div>
