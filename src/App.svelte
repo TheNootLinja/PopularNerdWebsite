@@ -1,7 +1,7 @@
 <script>
-  import Header from './UI/Header.svelte';
-  import ProjectGrid from './ProjectGrid.svelte';
-  import ContactInformation from './ContactInformation.svelte';
+  import Header from "./UI/Header.svelte";
+  import ProjectGrid from "./ProjectGrid.svelte";
+  import ContactInformation from "./ContactInformation.svelte";
 
   let mobMenuOpen = false;
 </script>
@@ -33,12 +33,7 @@
     margin: auto;
     background: rgb(238, 238, 238);
     box-shadow: 3px 3px 10px 0px #ccc;
-    padding-bottom: 1rem;
-  }
-
-  .about-me h3 {
-    padding: 0.5rem 0.5rem;
-    text-align: center;
+    padding: 1rem 0;
   }
 
   .about-me p {
@@ -73,13 +68,12 @@
   <!-- TODO: Want to put the about me section inside of a card -->
   <br id="aboutme" />
   <div class="about-me">
-    <h3>About Me</h3>
     <p>
-      And I am a full-stack developer from Michigan with a love for coffee (or
-      maybe just caffeine). I do freelance web development under the company
-      name Popular Nerd. My educational background is in IT Support and am a
-      self taught programmer with experience in python, c++, and c#, but most of
-      all, the vast world of
+      And I am a full-stack developer from Michigan with a love for coffee. I do
+      freelance and contract web development under the company name Popular
+      Nerd. My educational background is in IT Support and am a self taught
+      programmer with experience in python, c++, and c#, but most of all, the
+      vast world of
       <em><strong>web development</strong></em>. when I started teaching myself
       web development I really found what I had a passion for. The feeling of
       getting to see something come to life piece by piece as quickly as I am
