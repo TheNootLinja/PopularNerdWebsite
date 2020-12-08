@@ -1,7 +1,7 @@
 <script>
-  import Header from "./UI/Header.svelte";
-  import ProjectGrid from "./ProjectGrid.svelte";
-  import ContactInformation from "./ContactInformation.svelte";
+  import Header from './UI/Header.svelte';
+  import ProjectGrid from './ProjectGrid.svelte';
+  import ContactInformation from './ContactInformation.svelte';
 
   let mobMenuOpen = false;
 </script>
@@ -20,7 +20,7 @@
   h1 {
     color: rgb(90, 90, 90);
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 100;
     margin: auto;
     margin-bottom: 2rem;
@@ -45,11 +45,21 @@
     height: 15rem;
   }
 
+  .img-container {
+    text-align: center;
+  }
+
   span {
     color: #1b2d45;
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+  }
+
+  img {
+    width: 80%;
+    border-radius: 200px;
+    margin: auto;
   }
 
   @keyframes fadeInAnimation {
@@ -66,10 +76,13 @@
 <main>
   <h1>My name is <span>Nicholas Peters</span></h1>
   <!-- TODO: Want to put the about me section inside of a card -->
+  <div class="img-container">
+    <img src="../assets/pictures/nppicture.jpg" alt="" />
+  </div>
   <br id="aboutme" />
   <div class="about-me">
     <p>
-      And I am a full-stack developer from Michigan with a love for coffee. I do
+      I am a full-stack developer from Michigan with a love for coffee. I do
       freelance and contract web development under the company name Popular
       Nerd. My educational background is in IT Support and am a self taught
       programmer with experience in python, c++, and c#, but most of all, the
