@@ -2,6 +2,7 @@
   import Header from "./UI/Header.svelte";
   import ProjectGrid from "./ProjectGrid.svelte";
   import ContactInformation from "./ContactInformation.svelte";
+  import Skills from "./Skills.svelte";
 
   let mobMenuOpen = false;
 </script>
@@ -84,9 +85,7 @@
   </div>
 </main>
 <br id="skillgrid" />
-<div class="skills">
-  <h2>Programming Skills</h2>
-</div>
+<Skills />
 <br id="projectgrid" />
 <!-- This will be handled by the ProjectGrid component -->
 <ProjectGrid />
