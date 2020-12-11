@@ -51,6 +51,23 @@
     width: fit-content;
   }
 
+  .nav-icon {
+    margin: 1em;
+    width: 40px;
+  }
+
+  .nav-icon:after,
+  .nav-icon:before,
+  .nav-icon div {
+    background-color: #fae100;
+    border-radius: 3px;
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all 0.2s ease-in-out;
+  }
+
   @media only screen and (max-width: 500px) {
     a {
       display: none;
@@ -70,5 +87,8 @@
     <a href="#aboutme">About</a>
     <a href="#projectgrid">Projects</a>
     <a href="#contact" class="last">Contact</a>
+    <div class="nav-icon">
+      <div />
+    </div>
   </nav>
 </header>

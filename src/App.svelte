@@ -1,14 +1,8 @@
 <script>
-<<<<<<< HEAD
-  import Header from './UI/Header.svelte';
-  import ProjectGrid from './ProjectGrid.svelte';
-  import ContactInformation from './ContactInformation.svelte';
-=======
   import Header from "./UI/Header.svelte";
   import ProjectGrid from "./ProjectGrid.svelte";
   import ContactInformation from "./ContactInformation.svelte";
   import Skills from "./Skills.svelte";
->>>>>>> 8600e2d7b92f88bdb165a806b0a404ace1be490e
 
   let mobMenuOpen = false;
 </script>
