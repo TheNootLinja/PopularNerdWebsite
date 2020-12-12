@@ -4,7 +4,12 @@
 <style>
   h2 {
     text-align: center;
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: center;
   }
   .container {
     display: grid;
@@ -12,13 +17,13 @@
     width: 90%;
     justify-content: space-around;
     margin: auto;
-    gap: 10px;
+    gap: 5px;
   }
 
   .skill {
     /* background-color: lightgrey; */
-    width: 175px;
-    height: 175px;
+    width: 130px;
+    height: 130px;
     text-align: center;
     background-position: center;
     background-size: contain;
@@ -48,13 +53,27 @@
   .svelte {
     background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
   }
+
+  .card {
+    padding: 0.4rem;
+    margin-top: 4.5rem;
+  }
 </style>
 
-<h2>Web Dev Technologies</h2>
+<div class="card">
+  <h2>My Skills</h2>
+  <p>
+    I have spent a lot of my time working with React and Svelte on the front
+    end, while on the backend the majority of my experience is using Nodejs. I
+    also know Deno as I think it will only grow in popularity and I am always
+    looking to get ahead of the raging tide that is new things in web
+    development.
+  </p>
 
-<div class="container">
-  <div class="skill svelte image" />
-  <div class="skill deno" />
-  <div class="skill node" />
-  <div class="skill react" />
+  <div class="container">
+    <div class="skill svelte image" />
+    <div class="skill deno" />
+    <div class="skill node" />
+    <div class="skill react" />
+  </div>
 </div>

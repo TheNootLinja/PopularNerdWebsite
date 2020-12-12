@@ -27,7 +27,7 @@
   }
 
   .last {
-    margin-right: 2rem;
+    margin-right: 0.5rem;
   }
 
   .fake-logo {
@@ -50,7 +50,7 @@
     height: 35px;
     width: fit-content;
   }
-
+  /* ==================================================== */
   .nav-icon {
     margin: 1em;
     width: 40px;
@@ -68,9 +68,21 @@
     transition: all 0.2s ease-in-out;
   }
 
+  .nav-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+
+  .nav-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+
+  .nav-icon:hover div {
+    transform: scale(0);
+  }
+  /* =================================================== */
   @media only screen and (max-width: 500px) {
     a {
-      display: none;
+      /* display: none; */
     }
     .hb {
       display: block;
@@ -82,13 +94,14 @@
 </style>
 
 <header>
-  <h1 class="fake-logo">Nicholas Peters</h1>
+  <h1 class="fake-logo">NRP</h1>
   <nav>
     <a href="#aboutme">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projectgrid">Projects</a>
     <a href="#contact" class="last">Contact</a>
-    <div class="nav-icon">
-      <div />
-    </div>
+    <!-- <div class="nav-icon"> -->
+    <div />
+    <!-- </div> -->
   </nav>
 </header>

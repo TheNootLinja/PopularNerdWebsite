@@ -27,9 +27,6 @@
     margin: auto;
   }
 
-  .project-card {
-  }
-
   .project-container {
     background-color: rgb(218, 218, 218);
     margin-bottom: 15px;

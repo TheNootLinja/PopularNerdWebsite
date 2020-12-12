@@ -17,16 +17,14 @@
     text-decoration: none;
     font-weight: 700;
   }
-
   .container {
-    height: 20rem;
+    padding-bottom: 30px;
   }
-
   .a-container {
     padding-top: 1.5rem;
   }
 
-  .email {
+  .outline {
     outline: solid 2px #fae100;
     width: fit-content;
     margin: auto;
@@ -42,7 +40,9 @@
     and we can talk about what I can do to make your idea a reality.
   </p>
   <div class="a-container">
-    <p class="email">Email: popularnerddev@outlook.com</p>
-    <p />
+    <p class="outline">Email: popularnerddev@outlook.com</p>
   </div>
+  <h2>Wanna see what I have been working on?</h2>
+  <p>Check out my github page!</p>
+  <p class="outline">www.github.com/thenootlinja</p>
 </div>

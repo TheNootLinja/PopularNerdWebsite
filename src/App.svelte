@@ -3,6 +3,7 @@
   import ProjectGrid from "./ProjectGrid.svelte";
   import ContactInformation from "./ContactInformation.svelte";
   import Skills from "./Skills.svelte";
+  import Footer from "./UI/Footer.svelte";
 
   let mobMenuOpen = false;
 </script>
@@ -34,7 +35,8 @@
     margin: auto;
     background: rgb(238, 238, 238);
     box-shadow: 3px 3px 10px 0px #ccc;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
+    margin-top: 2.5rem;
   }
 
   .about-me p {
@@ -82,6 +84,7 @@
   </div>
   <br id="aboutme" />
   <div class="about-me">
+    <h2>About Me</h2>
     <p>
       I am a full-stack developer from Michigan with a love for coffee. I do
       freelance and contract web development under the company name Popular
@@ -97,13 +100,11 @@
     </p>
   </div>
 </main>
-<br id="skillgrid" />
+<br id="skills" />
 <Skills />
 <br id="projectgrid" />
 <!-- This will be handled by the ProjectGrid component -->
 <ProjectGrid />
 <br id="contact" />
 <ContactInformation />
-<!-- Possibly a contact info component -->
-<h2>Possibly a footer at this point in the page</h2>
-<!--  -->
+<Footer />
