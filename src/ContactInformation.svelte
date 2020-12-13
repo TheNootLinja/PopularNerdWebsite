@@ -19,16 +19,23 @@
   }
   .container {
     padding-bottom: 30px;
+    width: 95%;
+    margin: auto;
   }
   .a-container {
     padding-top: 1.5rem;
   }
 
   .outline {
-    outline: solid 2px #fae100;
+    outline: solid 2px #90a9b7;
     width: fit-content;
     margin: auto;
     padding: 5px 10px;
+  }
+
+  .card {
+    width: 95%;
+    margin: auto;
   }
 </style>
 

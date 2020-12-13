@@ -35,6 +35,7 @@
     margin: 0;
     margin-left: 0.5rem;
     padding-right: 6px;
+    color: #90a9b7;
   }
 
   .hb {

@@ -11,7 +11,14 @@
   p {
     text-align: center;
   }
+
   .container {
+    width: 95%;
+    margin: auto;
+    margin-top: 1.5rem;
+  }
+
+  .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90%;
@@ -22,12 +29,13 @@
 
   .skill {
     /* background-color: lightgrey; */
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
     text-align: center;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: auto;
   }
 
   .svelte {
@@ -40,6 +48,9 @@
 
   .deno {
     background-image: url("../assets/skill-logos/Deno.svg.png");
+    background-color: white;
+    border-radius: 100%;
+    margin: auto;
   }
 
   .node {
@@ -56,11 +67,13 @@
 
   .card {
     padding: 0.4rem;
-    margin-top: 4.5rem;
+    padding-top: 1.2rem;
+    margin: auto;
+    width: 95%;
   }
 </style>
 
-<div class="card">
+<div class="container">
   <h2>My Skills</h2>
   <p>
     I have spent a lot of my time working with React and Svelte on the front
@@ -70,7 +83,7 @@
     development.
   </p>
 
-  <div class="container">
+  <div class="grid-container">
     <div class="skill svelte image" />
     <div class="skill deno" />
     <div class="skill node" />

@@ -6,6 +6,9 @@
   --red: #ff5470;
   --yellow: #fae100;
   --black: #1b2d45;
+  --pewterBlue: #90a9b7;
+  --blackAndBlue: #0f1a27;
+  --actualBlack: #000000;
   --darkBlue: #333;
   --darkGrey: #222;
   --grey: #bfbfbf;
@@ -15,14 +18,14 @@
   /* Define Colors intentions */
   --primary: var(--green);
   --danger: var(--red);
-  --background: var(--lightGrey);
-  --textColor: var(--black);
+  --background: var(--blackAndBlue);
+  --textColor: var(--white);
   --buttonTextColor: var(--black);
   --lineColor: var(--grey);
   --cardBg: var(--white);
   --headerBackground: var(--darkBlue);
   --footerBackground: var(--black);
-  --linkUnderline: var(--yellow);
+  --linkUnderline: var(--pewterBlue);
 
   /* Styles */
   --line: solid 1px var(--lineColor);

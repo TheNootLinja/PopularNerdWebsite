@@ -10,6 +10,7 @@
   }
 
   h2 {
+    margin-top: 0;
     text-align: center;
   }
 
@@ -23,6 +24,10 @@
   }
 
   .container {
+    margin-top: 1.75rem;
+  }
+
+  .list-container {
     width: 90%;
     margin: auto;
   }
@@ -60,6 +65,11 @@
     width: 100%;
   }
 
+  .card {
+    width: 95%;
+    margin: auto;
+  }
+
   @media only screen and (min-width: 600px) {
     .container {
       display: block;
@@ -67,18 +77,20 @@
   }
 </style>
 
-<h2>Projects</h2>
 <div class="container">
-  <div class="project-container">
-    <div class="noot-wear" />
-    <p>Noot Wear (E-Commerce)</p>
-  </div>
-  <div class="project-container">
-    <div class="monster-rolodex" />
-    <p>Monsters Rolodex (React)</p>
-  </div>
-  <div class="project-container">
-    <div class="popular-nerd" />
-    <p>PacMan (React Game)</p>
+  <h2>Projects</h2>
+  <div class="list-container">
+    <div class="project-container">
+      <div class="noot-wear" />
+      <p>Noot Wear (E-Commerce)</p>
+    </div>
+    <div class="project-container">
+      <div class="monster-rolodex" />
+      <p>Monsters Rolodex (React)</p>
+    </div>
+    <div class="project-container">
+      <div class="popular-nerd" />
+      <p>PacMan (React Game)</p>
+    </div>
   </div>
 </div>
