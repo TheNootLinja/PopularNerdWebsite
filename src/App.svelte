@@ -4,6 +4,7 @@
   import ContactInformation from "./ContactInformation.svelte";
   import Skills from "./Skills.svelte";
   import Footer from "./UI/Footer.svelte";
+  import PreviousExperience from "./PreviousExperience.svelte";
 
   let mobMenuOpen = false;
 </script>
@@ -123,6 +124,8 @@
 </main>
 <br id="skills" />
 <Skills />
+<br id="prevexp" />
+<PreviousExperience />
 <br id="projectgrid" />
 <!-- This will be handled by the ProjectGrid component -->
 <ProjectGrid />

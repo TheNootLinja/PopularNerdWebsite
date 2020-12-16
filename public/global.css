@@ -26,6 +26,7 @@
   --headerBackground: var(--darkBlue);
   --footerBackground: var(--black);
   --linkUnderline: var(--pewterBlue);
+  --headerTextColor: var(var(--textColor))
 
   /* Styles */
   --line: solid 1px var(--lineColor);
@@ -389,6 +390,14 @@ tbody tr:last-child {
   --cardBg: var(--darkGrey);
   --background: var(--black);
   --textColor: var(--lightGrey);
+  --headerBackground: var(--darkGrey);
+  --buttonTextColor: var(--black);
+  --footerBackground: var(--darkGrey);
+}
+
+.cyberpunk {
+  --background: #120458;
+  --textColor: #fae100;
   --headerBackground: var(--darkGrey);
   --buttonTextColor: var(--black);
   --footerBackground: var(--darkGrey);
