@@ -2,49 +2,18 @@
 </script>
 
 <style>
-  .container {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  .project-container p {
     margin: auto;
-    gap: 2rem;
-  }
-
-  .project-card {
-    /* background-color: gray; */
-    height: 85%;
-    width: 90%;
     text-align: center;
-    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 800;
   }
 
-  .project-container {
-    background-color: rgb(218, 218, 218);
-    padding: 0px 5px;
-    height: 11rem;
-  }
-
-  .noot-wear {
-    background-image: url("../assets/project-thumbnails/noot-wear.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .popular-nerd {
-    background-image: url("../assets/project-thumbnails/popularnerd.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .monster-rolodex {
-    background-image: url("../assets/project-thumbnails/monster-rolodex.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
   h2 {
+    margin-top: 0;
     text-align: center;
   }
+
   h3 {
     background-color: rgba(155, 155, 155, 0.7);
     width: 100%;
@@ -54,41 +23,74 @@
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 1.75rem;
+  }
+
+  .list-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .project-container {
+    background-color: rgb(218, 218, 218);
+    margin-bottom: 15px;
+    /* width: fit-content; */
+  }
+
+  .noot-wear {
+    background-image: url("../assets/project-thumbnails/noot-wear.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 100%;
+  }
+
+  .popular-nerd {
+    background-image: url("../assets/project-thumbnails/popularnerd.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 100%;
+  }
+
+  .monster-rolodex {
+    background-image: url("../assets/project-thumbnails/monster-rolodex.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 100%;
+  }
+
+  .card {
+    width: 95%;
+    margin: auto;
+  }
+
+  @media only screen and (min-width: 600px) {
     .container {
       display: block;
-    }
-    .project-container {
-      margin-bottom: 10px;
-      padding-bottom: 10px;
     }
   }
 </style>
 
-<h2>Projects</h2>
 <div class="container">
-  <div class="project-container">
-    <div class="project-card noot-wear" />
-    <h3>Noot-Wear</h3>
-  </div>
-  <div class="project-container">
-    <div class="project-card popular-nerd" />
-    <h3>Popular Nerd Site</h3>
-  </div>
-  <div class="project-container">
-    <div class="project-card monster-rolodex" />
-    <h3>Monster Rolodex</h3>
-  </div>
-  <div class="project-container">
-    <div class="project-card noot-wear" />
-    <h3>RealTime Chat App</h3>
-  </div>
-  <div class="project-container">
-    <div class="project-card noot-wear" />
-    <h3>Tinder Clone</h3>
-  </div>
-  <div class="project-container">
-    <div class="project-card noot-wear" />
-    <h3>PacMan</h3>
+  <h2>Projects</h2>
+  <div class="list-container">
+    <div class="project-container">
+      <div class="noot-wear" />
+      <p>Noot Wear (E-Commerce)</p>
+    </div>
+    <div class="project-container">
+      <div class="monster-rolodex" />
+      <p>Monsters Rolodex (React)</p>
+    </div>
+    <div class="project-container">
+      <div class="popular-nerd" />
+      <p>PacMan (React Game)</p>
+    </div>
   </div>
 </div>
