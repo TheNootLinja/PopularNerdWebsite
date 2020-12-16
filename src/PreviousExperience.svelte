@@ -10,6 +10,7 @@
         padding: 0;
     }
     h2 {
+        margin-top: 0rem;
         margin-bottom: 2rem;
     }
     h3 {
