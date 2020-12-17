@@ -9,6 +9,7 @@
     text-align: center;
     padding: 0;
     margin: 0;
+    margin: auto;
     margin-bottom: 5px;
   }
 

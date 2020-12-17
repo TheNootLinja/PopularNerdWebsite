@@ -1,5 +1,6 @@
 <script>
     import { createEventDispatcher } from "svelte";
+    import { slide } from "svelte/transition";
 
     const dispatch = createEventDispatcher();
 
@@ -37,7 +38,7 @@
     }
 </style>
 
-<div class="container">
+<div class="container" transition:slide>
     <ul>
         <li><a href="#aboutme" on:click={closeMenu}>About</a></li>
         <li><a href="#prevexp" on:click={closeMenu}>Experience</a></li>

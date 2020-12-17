@@ -10,6 +10,7 @@
   }
   p {
     text-align: center;
+    margin: auto;
     margin-bottom: 2rem;
   }
 
