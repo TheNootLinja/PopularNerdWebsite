@@ -2,6 +2,9 @@
 </script>
 
 <style>
+  p {
+    padding-top: 10px;
+  }
   .container {
     width: 100%;
     height: 3rem;
