@@ -29,6 +29,7 @@
     .container {
         text-align: center;
         margin: auto;
+        margin-top: 1.25rem;
     }
 </style>
 

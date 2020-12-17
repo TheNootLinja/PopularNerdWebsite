@@ -106,9 +106,9 @@
   }
 </style>
 
-<Header on:openmenu={openMenu} />
+<Header on:openmenu={openMenu} hbOpen={mobMenuOpen} />
 {#if mobMenuOpen}
-  <PopUpMenu />
+  <PopUpMenu on:closemenu={openMenu} />
 {/if}
 <main>
   <h1>My name is <span>Nicholas Peters</span></h1>

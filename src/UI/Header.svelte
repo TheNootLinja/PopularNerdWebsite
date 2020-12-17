@@ -3,7 +3,7 @@
 
   const dispatch = createEventDispatcher();
 
-  let hbOpen = false;
+  export let hbOpen = false;
 
   function handleHbClick() {
     dispatch("openmenu");
@@ -25,6 +25,7 @@
   .container {
     display: inline-block;
     cursor: pointer;
+    margin-top: 8px;
   }
 
   .bar1,
