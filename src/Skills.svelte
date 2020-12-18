@@ -73,6 +73,17 @@
     margin: auto;
     width: 95%;
   }
+  @media only screen and (min-width: 700px) {
+    .grid-container {
+      justify-content: center;
+      width: 50%;
+    }
+    .skill {
+      margin-top: 20px;
+      width: 150px;
+      height: 150px;
+    }
+  }
 </style>
 
 <div class="container">
