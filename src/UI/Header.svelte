@@ -27,6 +27,17 @@
     cursor: pointer;
     margin-top: 8px;
   }
+  .last {
+    margin-right: 0.5rem;
+  }
+
+  .fake-logo {
+    font-size: 120%;
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-right: 6px;
+    color: #90a9b7;
+  }
 
   .bar1,
   .bar2,
@@ -42,6 +53,11 @@
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  /* ==================================================== */
+  .nav-icon {
+    margin: 1em;
+    width: 40px;
   }
 
   /* Fade out the second bar */
@@ -88,5 +104,8 @@
     <a href="#skills">Skills</a>
     <a href="#projectgrid">Projects</a>
     <a href="#contact" class="last">Contact</a>
+    <!-- <div class="nav-icon"> -->
+    <div />
+    <!-- </div> -->
   </nav>
 </header>
