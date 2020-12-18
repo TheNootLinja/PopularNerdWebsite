@@ -5,8 +5,15 @@
   import Skills from "./Skills.svelte";
   import Footer from "./UI/Footer.svelte";
   import PreviousExperience from "./PreviousExperience.svelte";
+  import PopUpMenu from "./UI/PopUpMenu.svelte";
 
   let mobMenuOpen = false;
+
+  function openMenu() {
+    console.log("It works!");
+    mobMenuOpen = !mobMenuOpen;
+    console.log(mobMenuOpen);
+  }
 </script>
 
 <style>
@@ -99,7 +106,10 @@
   }
 </style>
 
-<Header />
+<Header on:openmenu={openMenu} hbOpen={mobMenuOpen} />
+{#if mobMenuOpen}
+  <PopUpMenu on:closemenu={openMenu} />
+{/if}
 <main>
   <h1>My name is <span>Nicholas Peters</span></h1>
   <!-- TODO: Want to put the about me section inside of a card -->

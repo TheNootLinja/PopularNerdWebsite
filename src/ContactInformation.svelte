@@ -9,11 +9,15 @@
     text-align: center;
     padding: 0;
     margin: 0;
+    margin: auto;
     margin-bottom: 5px;
   }
 
   a {
-    color: black;
+    background-color: #00b3fe;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
     text-decoration: none;
     font-weight: 700;
   }
@@ -21,17 +25,22 @@
     padding-bottom: 30px;
     width: 95%;
     margin: auto;
+    text-align: center;
   }
   .a-container {
     padding-top: 1.5rem;
   }
+  
+  .pushDown {
+    margin-bottom: 25px;
+  }
 
-  .outline {
+  /* .outline {
     outline: solid 2px #90a9b7;
     width: fit-content;
     margin: auto;
     padding: 5px 10px;
-  }
+  } */
 
   .card {
     width: 95%;
@@ -47,9 +56,9 @@
     and we can talk about what I can do to make your idea a reality.
   </p>
   <div class="a-container">
-    <p class="outline">Email: popularnerddev@outlook.com</p>
+    <a href="mailto:popularnerddev@outlook.com">popularnerddev@outlook.com</a>
   </div>
-  <h2>Wanna see what I have been working on?</h2>
-  <p>Check out my github page!</p>
-  <p class="outline">www.github.com/thenootlinja</p>
+  <h2>Curious what I've been working on?</h2>
+  <p class="pushDown">Link to my Github</p>
+  <a href="https://www.github.com/thenootlinja">TheNootLinja</a>
 </div>

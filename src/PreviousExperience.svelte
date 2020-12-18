@@ -22,6 +22,7 @@
     }
     p {
         width: 95%;
+        margin: auto;
     }
     hr {
         width: 70%;
@@ -29,6 +30,8 @@
     .container {
         text-align: center;
         margin: auto;
+        margin-top: 1.25rem;
+        text-align: center;
     }
 </style>
 

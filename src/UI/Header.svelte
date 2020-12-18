@@ -1,31 +1,32 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
+
+  export let hbOpen = false;
+
+  function handleHbClick() {
+    dispatch("openmenu");
+    hbOpen = !hbOpen;
+  }
 </script>
 
 <style>
-  /* header {
-    color: white;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 3rem;
-    background-color: #333;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */
-
-  /* header nav a {
-    color: white;
-    text-decoration: none;
-    border-bottom: solid 2px #00ebc7;
-  } */
-
   header nav a + a {
     margin-left: 10px;
   }
 
+  /* =========================================================== */
+
+  a {
+    display: none;
+  }
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 8px;
+  }
   .last {
     margin-right: 0.5rem;
   }
@@ -38,18 +39,20 @@
     color: #90a9b7;
   }
 
-  .hb {
+  .bar1,
+  .bar2,
+  .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #00ebc7;
-    margin: 6px 20px;
-    display: none;
+    background-color: #90a9b7;
+    margin: 6px 0;
+    transition: 0.4s;
   }
 
-  .hb-container {
-    display: none;
-    height: 35px;
-    width: fit-content;
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
   }
   /* ==================================================== */
   .nav-icon {
@@ -57,39 +60,34 @@
     width: 40px;
   }
 
-  .nav-icon:after,
-  .nav-icon:before,
-  .nav-icon div {
-    background-color: #fae100;
-    border-radius: 3px;
-    content: "";
-    display: block;
-    height: 5px;
-    margin: 7px 0;
-    transition: all 0.2s ease-in-out;
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
   }
 
-  .nav-icon:hover:before {
-    transform: translateY(12px) rotate(135deg);
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  /* =========================================================== */
+  .last {
+    margin-right: 0.5rem;
   }
 
-  .nav-icon:hover:after {
-    transform: translateY(-12px) rotate(-135deg);
+  .fake-logo {
+    font-size: 120%;
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-right: 6px;
+    color: #90a9b7;
   }
-
-  .nav-icon:hover div {
-    transform: scale(0);
-  }
-  /* =================================================== */
-  @media only screen and (max-width: 500px) {
+  @media only screen and (min-width: 500px) {
     a {
-      /* display: none; */
+      display: inline-block;
     }
-    .hb {
-      display: block;
-    }
-    .hb-container {
-      display: block;
+    .container {
+      display: none;
     }
   }
 </style>
@@ -97,6 +95,11 @@
 <header>
   <h1 class="fake-logo">NRP</h1>
   <nav>
+    <div class="container {hbOpen ? 'change' : ''}" on:click={handleHbClick}>
+      <div class="bar1" />
+      <div class="bar2" />
+      <div class="bar3" />
+    </div>
     <a href="#aboutme">About</a>
     <a href="#skills">Skills</a>
     <a href="#projectgrid">Projects</a>

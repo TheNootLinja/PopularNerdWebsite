@@ -26,7 +26,7 @@
   --headerBackground: var(--darkBlue);
   --footerBackground: var(--black);
   --linkUnderline: var(--pewterBlue);
-  --headerTextColor: var(var(--textColor))
+  --headerTextColor: var(--textColor);
 
   /* Styles */
   --line: solid 1px var(--lineColor);
