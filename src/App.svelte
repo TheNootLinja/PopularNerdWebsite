@@ -39,7 +39,8 @@
 
   p {
     text-align: center;
-    max-width: 95%;
+    width: 95%;
+    max-width: 800px;
     margin: auto;
   }
 
