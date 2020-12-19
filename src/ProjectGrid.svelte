@@ -2,6 +2,11 @@
 </script>
 
 <style>
+  h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
   .project-container p {
     margin: auto;
     text-align: center;
@@ -9,22 +14,10 @@
     font-weight: 800;
   }
 
-  h2 {
-    margin-top: 0;
-    text-align: center;
-  }
-
-  h3 {
-    background-color: rgba(155, 155, 155, 0.7);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    font-size: 1.5rem;
-  }
-
   .container {
     margin-top: 1.75rem;
+    max-width: 1200px;
+    margin: auto;
   }
 
   .list-container {
@@ -41,10 +34,10 @@
   .noot-wear {
     background-image: url("../assets/project-thumbnails/noot-wear.png");
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    height: 10rem;
     width: 100%;
+    height: 10rem;
   }
 
   .popular-nerd {
@@ -65,14 +58,30 @@
     width: 100%;
   }
 
-  .card {
-    width: 95%;
-    margin: auto;
+  .description {
+    display: none;
+    background-color: #333;
+    height: fit-content;
   }
 
   @media only screen and (min-width: 600px) {
-    .container {
-      display: block;
+    .list-container {
+      /* display: grid;
+      grid-template-columns: repeat(2, 1fr); */
+    }
+    .project-container .name {
+      display: none;
+    }
+    .project-container .description {
+      display: inline-block;
+    }
+    .project-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .noot {
+      height: 100%;
+      background-size: auto;
     }
   }
 </style>
@@ -81,16 +90,41 @@
   <h2>Projects</h2>
   <div class="list-container">
     <div class="project-container">
+      <!-- <img src="../assets/project-thumbnails/noot-wear.png" alt="" /> -->
       <div class="noot-wear" />
-      <p>Noot Wear (E-Commerce)</p>
+      <p class="name">Noot Wear (E-Commerce)</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde hic
+        animi accusantium laborum laboriosam accusamus. Id, nostrum quia ullam
+        perferendis molestiae harum! Nesciunt doloribus, suscipit velit itaque
+        aspernatur reprehenderit natus veniam id eligendi eum, quibusdam
+        voluptates? Nisi ex numquam, dolorum harum delectus aut non natus
+        placeat tempore laboriosam nam.
+      </p>
     </div>
     <div class="project-container">
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde hic
+        animi accusantium laborum laboriosam accusamus. Id, nostrum quia ullam
+        perferendis molestiae harum! Nesciunt doloribus, suscipit velit itaque
+        aspernatur reprehenderit natus veniam id eligendi eum, quibusdam
+        voluptates? Nisi ex numquam, dolorum harum delectus aut non natus
+        placeat tempore laboriosam nam.
+      </p>
       <div class="monster-rolodex" />
-      <p>Monsters Rolodex (React)</p>
+      <p class="name">Monsters Rolodex (React)</p>
     </div>
     <div class="project-container">
       <div class="popular-nerd" />
-      <p>PacMan (React Game)</p>
+      <p class="name">PacMan (React Game)</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde hic
+        animi accusantium laborum laboriosam accusamus. Id, nostrum quia ullam
+        perferendis molestiae harum! Nesciunt doloribus, suscipit velit itaque
+        aspernatur reprehenderit natus veniam id eligendi eum, quibusdam
+        voluptates? Nisi ex numquam, dolorum harum delectus aut non natus
+        placeat tempore laboriosam nam.
+      </p>
     </div>
   </div>
 </div>

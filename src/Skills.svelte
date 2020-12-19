@@ -42,21 +42,24 @@
 
   .svelte {
     background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
+    margin-right: unset;
   }
 
   .react {
     background-image: url("../assets/skill-logos/react2.png");
+    margin-left: unset;
   }
 
   .deno {
     background-image: url("../assets/skill-logos/Deno.svg.png");
     background-color: white;
     border-radius: 100%;
-    margin: auto;
+    margin-left: unset;
   }
 
   .node {
     background-image: url("../assets/skill-logos/nodejs.svg");
+    margin-right: unset;
   }
 
   .svelte {
@@ -67,12 +70,6 @@
     background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
   }
 
-  .card {
-    padding: 0.4rem;
-    padding-top: 1.2rem;
-    margin: auto;
-    width: 95%;
-  }
   @media only screen and (min-width: 700px) {
     .grid-container {
       justify-content: center;
@@ -82,6 +79,20 @@
       margin-top: 20px;
       width: 150px;
       height: 150px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .skill {
+      margin-top: 20px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media only screen and (min-width: 2560px) {
+    .skill {
+      margin-top: 20px;
+      width: 300px;
+      height: 300px;
     }
   }
 </style>
