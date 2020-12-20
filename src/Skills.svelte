@@ -22,7 +22,7 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 90%;
     justify-content: space-around;
     margin: auto;
@@ -31,8 +31,8 @@
 
   .skill {
     /* background-color: lightgrey; */
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     background-position: center;
     background-size: contain;
@@ -77,40 +77,47 @@
     }
     .skill {
       margin-top: 20px;
-      width: 150px;
-      height: 150px;
+      width: 125px;
+      height: 125px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .skilldescription {
+      margin: auto auto;
     }
   }
   @media only screen and (min-width: 1200px) {
     .skill {
       margin-top: 20px;
-      width: 200px;
-      height: 200px;
-    }
-  }
-  @media only screen and (min-width: 2560px) {
-    .skill {
-      margin-top: 20px;
-      width: 300px;
-      height: 300px;
     }
   }
 </style>
 
 <div class="container">
-  <h2>My Skills</h2>
-  <p>
-    I have spent a lot of my time working with React and Svelte on the front
-    end, while on the backend the majority of my experience is using Nodejs. I
-    also know Deno as I think it will only grow in popularity and I am always
-    looking to get ahead of the raging tide that is new things in web
-    development.
-  </p>
+  <div class="skilldescription">
+    <h2>My Skills</h2>
+    <p>
+      I have spent a lot of my time working with React and Svelte on the front
+      end, while on the backend the majority of my experience is using Nodejs. I
+      also know Deno as I think it will only grow in popularity and I am always
+      looking to get ahead of the raging tide that is new things in web
+      development.
+    </p>
+  </div>
 
   <div class="grid-container">
     <div class="skill svelte image" />
     <div class="skill deno" />
     <div class="skill node" />
     <div class="skill react" />
+    <div class="skill svelte image" />
+    <div class="skill deno" />
+    <div class="skill react" />
+    <div class="skill svelte image" />
+    <div class="skill deno" />
   </div>
 </div>

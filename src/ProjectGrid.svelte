@@ -6,7 +6,18 @@
     margin-top: 0;
     text-align: center;
   }
+  ul {
+    text-align: center;
+    padding: 0;
+  }
 
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: white;
+  }
   .project-container p {
     margin: auto;
     text-align: center;
@@ -26,7 +37,7 @@
   }
 
   .project-container {
-    background-color: rgb(218, 218, 218);
+    /* background-color: rgb(218, 218, 218); */
     margin-bottom: 15px;
     /* width: fit-content; */
   }
@@ -34,10 +45,10 @@
   .noot-wear {
     background-image: url("../assets/project-thumbnails/noot-wear.png");
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
   }
 
   .popular-nerd {
@@ -45,7 +56,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 10rem;
+    height: 15rem;
     width: 100%;
   }
 
@@ -54,34 +65,32 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 10rem;
+    height: 15rem;
     width: 100%;
   }
+  .spacer {
+    background-color: rgba(0, 0, 0, 0);
+  }
 
-  .description {
-    display: none;
+  .projectdesccont {
     background-color: #333;
-    height: fit-content;
+    display: none;
+    text-align: center;
   }
 
   @media only screen and (min-width: 600px) {
-    .list-container {
-      /* display: grid;
-      grid-template-columns: repeat(2, 1fr); */
+    p {
+      text-align: center;
     }
     .project-container .name {
       display: none;
     }
-    .project-container .description {
-      display: inline-block;
-    }
     .project-container {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 30fr 1fr 30fr;
     }
-    .noot {
-      height: 100%;
-      background-size: auto;
+    .projectdesccont {
+      display: block;
     }
   }
 </style>
@@ -93,38 +102,50 @@
       <!-- <img src="../assets/project-thumbnails/noot-wear.png" alt="" /> -->
       <div class="noot-wear" />
       <p class="name">Noot Wear (E-Commerce)</p>
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde hic
-        animi accusantium laborum laboriosam accusamus. Id, nostrum quia ullam
-        perferendis molestiae harum! Nesciunt doloribus, suscipit velit itaque
-        aspernatur reprehenderit natus veniam id eligendi eum, quibusdam
-        voluptates? Nisi ex numquam, dolorum harum delectus aut non natus
-        placeat tempore laboriosam nam.
-      </p>
+      <div class="spacer" />
+      <div class="projectdesccont">
+        <p>Built with</p>
+        <ul>
+          <li>React</li>
+        </ul>
+        <p>
+          This is one of the first projects I did when learning React. The app
+          hits an api, shows some use of components
+        </p>
+        <a href="/">www.monsterrolodex.com</a>
+      </div>
     </div>
     <div class="project-container">
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde hic
-        animi accusantium laborum laboriosam accusamus. Id, nostrum quia ullam
-        perferendis molestiae harum! Nesciunt doloribus, suscipit velit itaque
-        aspernatur reprehenderit natus veniam id eligendi eum, quibusdam
-        voluptates? Nisi ex numquam, dolorum harum delectus aut non natus
-        placeat tempore laboriosam nam.
-      </p>
+      <div class="projectdesccont">
+        <p>Built with</p>
+        <ul>
+          <li>React</li>
+        </ul>
+        <p>
+          This is one of the first projects I did when learning React. The app
+          hits an api, shows some use of components
+        </p>
+        <a href="/">www.monsterrolodex.com</a>
+      </div>
+      <div class="spacer" />
       <div class="monster-rolodex" />
       <p class="name">Monsters Rolodex (React)</p>
     </div>
     <div class="project-container">
       <div class="popular-nerd" />
       <p class="name">PacMan (React Game)</p>
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde hic
-        animi accusantium laborum laboriosam accusamus. Id, nostrum quia ullam
-        perferendis molestiae harum! Nesciunt doloribus, suscipit velit itaque
-        aspernatur reprehenderit natus veniam id eligendi eum, quibusdam
-        voluptates? Nisi ex numquam, dolorum harum delectus aut non natus
-        placeat tempore laboriosam nam.
-      </p>
+      <div class="spacer" />
+      <div class="projectdesccont">
+        <p>Built with</p>
+        <ul>
+          <li>React</li>
+        </ul>
+        <p>
+          This is one of the first projects I did when learning React. The app
+          hits an api, shows some use of components
+        </p>
+        <a href="/">www.monsterrolodex.com</a>
+      </div>
     </div>
   </div>
 </div>
