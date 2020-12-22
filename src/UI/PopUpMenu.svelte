@@ -41,8 +41,8 @@
 <div class="container" transition:slide>
     <ul>
         <li><a href="#aboutme" on:click={closeMenu}>About</a></li>
-        <li><a href="#prevexp" on:click={closeMenu}>Experience</a></li>
         <li><a href="#projectgrid" on:click={closeMenu}>Projects</a></li>
+        <li><a href="#prevexp" on:click={closeMenu}>Experience</a></li>
         <li><a href="#contact" on:click={closeMenu}>Contact</a></li>
     </ul>
 </div>

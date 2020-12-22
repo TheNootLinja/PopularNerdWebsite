@@ -18,7 +18,7 @@
   a {
     color: white;
   }
-  .project-container p {
+  .name {
     margin: auto;
     text-align: center;
     font-size: 1.1rem;
@@ -26,9 +26,9 @@
   }
 
   .container {
+    margin: auto;
     margin-top: 1.75rem;
     max-width: 1200px;
-    margin: auto;
   }
 
   .list-container {
@@ -40,6 +40,10 @@
     /* background-color: rgb(218, 218, 218); */
     margin-bottom: 15px;
     /* width: fit-content; */
+  }
+
+  .website {
+    margin-top: 5rem;
   }
 
   .noot-wear {
@@ -107,12 +111,14 @@
         <p>Built with</p>
         <ul>
           <li>React</li>
+          <li>Redux</li>
+          <li>Firebase Auth</li>
         </ul>
-        <p>
-          This is one of the first projects I did when learning React. The app
-          hits an api, shows some use of components
-        </p>
-        <a href="/">www.monsterrolodex.com</a>
+        <p>An ecommerce site for a fictitious brand, noot-wear.</p>
+        <a
+          class="website"
+          target="blank"
+          href="https://gifted-shirley-d8a43d.netlify.app/">See The Live Site</a>
       </div>
     </div>
     <div class="project-container">

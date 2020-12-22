@@ -42,32 +42,28 @@
 
   .svelte {
     background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
-    margin-right: unset;
   }
 
   .react {
     background-image: url("../assets/skill-logos/react2.png");
-    margin-left: unset;
   }
 
   .deno {
     background-image: url("../assets/skill-logos/Deno.svg.png");
     background-color: white;
     border-radius: 100%;
-    margin-left: unset;
   }
 
   .node {
     background-image: url("../assets/skill-logos/nodejs.svg");
-    margin-right: unset;
   }
 
-  .svelte {
-    background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
+  .graphql {
+    background-image: url("../assets/skill-logos/graphql.svg.png");
   }
 
-  .svelte {
-    background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
+  .html5 {
+    background-image: url("../assets/skill-logos/HTML5.svg.png");
   }
 
   @media only screen and (min-width: 700px) {
@@ -101,23 +97,25 @@
   <div class="skilldescription">
     <h2>My Skills</h2>
     <p>
-      I have spent a lot of my time working with React and Svelte on the front
-      end, while on the backend the majority of my experience is using Nodejs. I
-      also know Deno as I think it will only grow in popularity and I am always
-      looking to get ahead of the raging tide that is new things in web
-      development.
+      In my time learning web development I have had a chance to use and
+      experiment with a lot of different technologies. While I have general
+      experience in many of these technologies, the bulk of my experience on the
+      front-end is with React and Svelte. I feel like these 2 frameworks were a
+      good pair to spend my time on as they compliment each other in what they
+      are most useful for building, and the amount of knowledge and concepts
+      that carries from one to the other. On back-end development I started with
+      using Nodejs as I already had JavaScript experience, but more recently I
+      have started using Deno as I think that it will only continue to grow in
+      use as time moves forward.
     </p>
   </div>
 
   <div class="grid-container">
-    <div class="skill svelte image" />
+    <div class="skill svelte" />
     <div class="skill deno" />
+    <div class="skill react" />
     <div class="skill node" />
-    <div class="skill react" />
-    <div class="skill svelte image" />
-    <div class="skill deno" />
-    <div class="skill react" />
-    <div class="skill svelte image" />
-    <div class="skill deno" />
+    <div class="skill html5" />
+    <div class="skill graphql" />
   </div>
 </div>
