@@ -134,8 +134,8 @@
           I am a full-stack developer from Michigan with a love for coffee,
           tech, and did I mention coffee? I do freelance and contract web
           development under the company name Popular Nerd over at
-          popularnerd.tech. My educational background is in IT Support and am a
-          self taught programmer with experience in python, c++, and c#, but
+          popularnerd.tech. My educational background is in IT Support but I am
+          a self taught programmer with experience in python, c++, and c#, but
           most of all, the vast world of
           <em><strong>web development</strong></em>. when I started teaching
           myself web development I really found what I had a passion for. The

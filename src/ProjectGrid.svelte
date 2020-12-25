@@ -81,6 +81,10 @@
     display: none;
     text-align: center;
   }
+  .picture-link {
+    height: auto;
+    width: auto;
+  }
 
   @media only screen and (min-width: 600px) {
     p {
@@ -104,7 +108,9 @@
   <div class="list-container">
     <div class="project-container">
       <!-- <img src="../assets/project-thumbnails/noot-wear.png" alt="" /> -->
-      <div class="noot-wear" />
+      <a href="/">
+        <div class="noot-wear" />
+      </a>
       <p class="name">Noot Wear (E-Commerce)</p>
       <div class="spacer" />
       <div class="projectdesccont">
@@ -131,15 +137,19 @@
           This is one of the first projects I did when learning React. The app
           hits an api, shows some use of components
         </p>
-        <a href="/">www.monsterrolodex.com</a>
+        <a href="/">See The Live Site</a>
       </div>
       <div class="spacer" />
-      <div class="monster-rolodex" />
+      <a target="blank" href="https://gifted-shirley-d8a43d.netlify.app/">
+        <div class="monster-rolodex" />
+      </a>
       <p class="name">Monsters Rolodex (React)</p>
     </div>
     <div class="project-container">
-      <div class="popular-nerd" />
-      <p class="name">PacMan (React Game)</p>
+      <a href="/">
+        <div class="popular-nerd" />
+      </a>
+      <p class="name">PacMan (Javascript Game)</p>
       <div class="spacer" />
       <div class="projectdesccont">
         <p>Built with</p>
@@ -150,7 +160,7 @@
           This is one of the first projects I did when learning React. The app
           hits an api, shows some use of components
         </p>
-        <a href="/">www.monsterrolodex.com</a>
+        <a href="/">See The Live Site</a>
       </div>
     </div>
   </div>
