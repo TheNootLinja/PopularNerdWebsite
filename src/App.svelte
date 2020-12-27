@@ -20,6 +20,10 @@
   main {
     padding-top: 4rem;
     margin: auto;
+    /* background-image: url("../assets/pictures/nppicture.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
   }
 
   h1 {
@@ -28,13 +32,14 @@
     font-size: 3em;
     font-weight: 100;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 0.25rem;
     /* max-width: 700px; */
     text-align: center;
   }
 
   h2 {
     text-align: center;
+    margin-top: 0;
   }
 
   p {
@@ -53,9 +58,10 @@
   }
 
   img {
-    width: 80%;
-    border-radius: 100%;
+    width: 100%;
+    height: 315px;
     margin: auto;
+    overflow: hidden;
   }
   .container {
     max-width: 1500px;
@@ -64,6 +70,8 @@
 
   .img-container {
     text-align: center;
+    overflow: hidden;
+    width: 100%;
   }
 
   .grid {
@@ -81,10 +89,16 @@
 
   @media only screen and (min-width: 600px) {
     img {
-      width: 300px;
+      width: 100%;
+      height: 600px;
     }
     h1 {
       width: 500px;
+      margin-bottom: 1rem;
+    }
+    .img-container {
+      overflow: hidden;
+      height: 300px;
     }
   }
   @media only screen and (min-width: 1000px) {
