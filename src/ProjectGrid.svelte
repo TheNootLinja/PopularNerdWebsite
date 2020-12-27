@@ -6,9 +6,14 @@
     margin-top: 0;
     text-align: center;
   }
+  h4 {
+    padding-top: 0;
+    margin-top: 0;
+  }
   ul {
     text-align: center;
     padding: 0;
+    margin-top: 0;
   }
 
   li {
@@ -17,6 +22,9 @@
 
   a {
     color: white;
+  }
+  p {
+    margin-bottom: 0;
   }
   .name {
     margin: auto;
@@ -48,6 +56,14 @@
 
   .noot-wear {
     background-image: url("../assets/project-thumbnails/noot-wear.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15rem;
+  }
+  .whats-on {
+    background-image: url("../assets/project-thumbnails/whatson.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,7 +123,7 @@
   <h2>Projects</h2>
   <div class="list-container">
     <div class="project-container">
-      <!-- <img src="../assets/project-thumbnails/noot-wear.png" alt="" /> -->
+      <!-- Project picture #1 -->
       <a href="/">
         <div class="noot-wear" />
       </a>
@@ -121,31 +137,34 @@
           <li>Firebase Auth</li>
         </ul>
         <p>An ecommerce site for a fictitious brand, noot-wear.</p>
-        <a
-          class="website"
-          target="blank"
-          href="https://gifted-shirley-d8a43d.netlify.app/">See The Live Site</a>
+        <!-- Project link #1 -->
+        <a class="website" target="blank" href="/">See The Live Site</a>
       </div>
     </div>
     <div class="project-container">
       <div class="projectdesccont">
+        <h4>What's On?</h4>
         <p>Built with</p>
         <ul>
           <li>React</li>
+          <li>MovieDB API</li>
         </ul>
         <p>
           This is one of the first projects I did when learning React. The app
           hits an api, shows some use of components
         </p>
+        <!-- Project link #2 -->
         <a href="/">See The Live Site</a>
       </div>
       <div class="spacer" />
-      <a target="blank" href="https://gifted-shirley-d8a43d.netlify.app/">
-        <div class="monster-rolodex" />
+      <!-- Project picture #2 -->
+      <a target="blank" href="https://compassionate-shaw-0e3725.netlify.app/">
+        <div class="whats-on" />
       </a>
       <p class="name">Monsters Rolodex (React)</p>
     </div>
     <div class="project-container">
+      <!-- Project Picture #3 -->
       <a href="/">
         <div class="popular-nerd" />
       </a>
@@ -160,6 +179,7 @@
           This is one of the first projects I did when learning React. The app
           hits an api, shows some use of components
         </p>
+        <!-- Project link #3 -->
         <a href="/">See The Live Site</a>
       </div>
     </div>
