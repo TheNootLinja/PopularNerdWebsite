@@ -97,7 +97,10 @@
     }
     .img-container {
       overflow: hidden;
-      height: 300px;
+      height: 250px;
+    }
+    img {
+      padding-bottom: 30px;
     }
   }
   @media only screen and (min-width: 1000px) {
@@ -111,11 +114,16 @@
       grid-template-columns: 2fr 0fr 3fr;
     }
     img {
-      width: 400px;
+      width: 700px;
       margin: auto auto;
     }
     .aboutme {
       margin: auto auto;
+    }
+    .img-container {
+      height: 400px;
+      width: 95%;
+      margin: auto;
     }
   }
   @media only screen and (min-width: 1550px) {

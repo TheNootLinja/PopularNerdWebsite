@@ -95,7 +95,7 @@
 
 <div class="container">
   <div class="skilldescription">
-    <h2>My Skills</h2>
+    <h2>Skills</h2>
     <p>
       In my time learning web development I have had a chance to use and
       experiment with a lot of different technologies. While I have general
