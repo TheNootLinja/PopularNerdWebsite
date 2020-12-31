@@ -59,9 +59,8 @@
 
   img {
     width: 100%;
-    height: 315px;
+    height: 310px;
     margin: auto;
-    overflow: hidden;
   }
   .container {
     max-width: 1500px;
