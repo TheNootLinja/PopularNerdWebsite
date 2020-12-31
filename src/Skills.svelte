@@ -22,7 +22,7 @@
 
   .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 90%;
     justify-content: space-around;
     margin: auto;
@@ -31,8 +31,8 @@
 
   .skill {
     /* background-color: lightgrey; */
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     background-position: center;
     background-size: contain;
@@ -52,27 +52,20 @@
     background-image: url("../assets/skill-logos/Deno.svg.png");
     background-color: white;
     border-radius: 100%;
-    margin: auto;
   }
 
   .node {
     background-image: url("../assets/skill-logos/nodejs.svg");
   }
 
-  .svelte {
-    background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
+  .graphql {
+    background-image: url("../assets/skill-logos/graphql.svg.png");
   }
 
-  .svelte {
-    background-image: url("../assets/skill-logos/Svelte_Logo.svg.png");
+  .html5 {
+    background-image: url("../assets/skill-logos/HTML5.svg.png");
   }
 
-  .card {
-    padding: 0.4rem;
-    padding-top: 1.2rem;
-    margin: auto;
-    width: 95%;
-  }
   @media only screen and (min-width: 700px) {
     .grid-container {
       justify-content: center;
@@ -80,26 +73,49 @@
     }
     .skill {
       margin-top: 20px;
-      width: 150px;
-      height: 150px;
+      width: 125px;
+      height: 125px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .skilldescription {
+      margin: auto auto;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .skill {
+      margin-top: 20px;
     }
   }
 </style>
 
 <div class="container">
-  <h2>My Skills</h2>
-  <p>
-    I have spent a lot of my time working with React and Svelte on the front
-    end, while on the backend the majority of my experience is using Nodejs. I
-    also know Deno as I think it will only grow in popularity and I am always
-    looking to get ahead of the raging tide that is new things in web
-    development.
-  </p>
+  <div class="skilldescription">
+    <h2>My Skills</h2>
+    <p>
+      In my time learning web development I have had a chance to use and
+      experiment with a lot of different technologies. While I have general
+      experience in many of these technologies, the bulk of my experience on the
+      front-end is with React and Svelte. I feel like these 2 frameworks were a
+      good pair to spend my time on as they compliment each other in what they
+      are most useful for building, and the amount of knowledge and concepts
+      that carries from one to the other. On back-end development I started with
+      using Nodejs as I already had JavaScript experience, but more recently I
+      have started using Deno as I think that it will only continue to grow in
+      use as time moves forward.
+    </p>
+  </div>
 
   <div class="grid-container">
-    <div class="skill svelte image" />
+    <div class="skill svelte" />
     <div class="skill deno" />
-    <div class="skill node" />
     <div class="skill react" />
+    <div class="skill node" />
+    <div class="skill html5" />
+    <div class="skill graphql" />
   </div>
 </div>

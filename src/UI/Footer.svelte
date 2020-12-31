@@ -4,6 +4,7 @@
 <style>
   p {
     padding-top: 10px;
+    margin: auto;
   }
   .container {
     width: 100%;

@@ -32,6 +32,7 @@
         margin: auto;
         margin-top: 1.25rem;
         text-align: center;
+        max-width: 700px;
     }
 </style>
 

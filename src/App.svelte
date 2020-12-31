@@ -20,6 +20,10 @@
   main {
     padding-top: 4rem;
     margin: auto;
+    /* background-image: url("../assets/pictures/nppicture.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
   }
 
   h1 {
@@ -28,18 +32,20 @@
     font-size: 3em;
     font-weight: 100;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 0.25rem;
     /* max-width: 700px; */
     text-align: center;
   }
 
   h2 {
     text-align: center;
+    margin-top: 0;
   }
 
   p {
     text-align: center;
-    max-width: 95%;
+    width: 95%;
+    max-width: 800px;
     margin: auto;
   }
 
@@ -52,39 +58,23 @@
   }
 
   img {
-    width: 80%;
-    border-radius: 100%;
+    width: 100%;
+    height: 310px;
     margin: auto;
   }
-
-  .about-me {
-    max-width: 100%;
+  .container {
+    max-width: 1500px;
     margin: auto;
-    background: rgb(238, 238, 238);
-    box-shadow: 3px 3px 10px 0px #ccc;
-    padding: 0 0 1rem 0;
-    margin-top: 2.5rem;
-  }
-
-  .about-me p {
-    text-align: center;
-    margin: auto;
-  }
-
-  .skills {
-    height: 15rem;
   }
 
   .img-container {
     text-align: center;
+    overflow: hidden;
+    width: 100%;
   }
 
-  .card {
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    padding: 0.4rem;
-    padding-top: 1.2rem;
+  .grid {
+    display: block;
   }
 
   @keyframes fadeInAnimation {
@@ -98,10 +88,43 @@
 
   @media only screen and (min-width: 600px) {
     img {
-      width: 300px;
+      width: 100%;
+      height: 600px;
     }
     h1 {
       width: 500px;
+      margin-bottom: 1rem;
+    }
+    .img-container {
+      overflow: hidden;
+      height: 300px;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    h2 {
+      margin-top: 0;
+    }
+    .grid {
+      display: grid;
+    }
+    .twocol {
+      grid-template-columns: 2fr 0fr 3fr;
+    }
+    img {
+      width: 400px;
+      margin: auto auto;
+    }
+    .aboutme {
+      margin: auto auto;
+    }
+  }
+  @media only screen and (min-width: 1550px) {
+    h1 {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+    .img-container {
+      text-align: right;
     }
   }
 </style>
@@ -110,35 +133,40 @@
 {#if mobMenuOpen}
   <PopUpMenu on:closemenu={openMenu} />
 {/if}
-<main>
-  <h1>My name is <span>Nicholas Peters</span></h1>
-  <!-- TODO: Want to put the about me section inside of a card -->
-  <div class="img-container">
-    <img src="../assets/pictures/nppicture.jpg" alt="" />
-  </div>
-  <br id="aboutme" />
-  <h2>About Me</h2>
-  <p>
-    I am a full-stack developer from Michigan with a love for coffee, tech, and
-    did I mention coffee? I do freelance and contract web development under the
-    company name Popular Nerd over at popularnerd.tech. My educational
-    background is in IT Support and am a self taught programmer with experience
-    in python, c++, and c#, but most of all, the vast world of
-    <em><strong>web development</strong></em>. when I started teaching myself
-    web development I really found what I had a passion for. The feeling of
-    getting to see something come to life piece by piece as quickly as I am able
-    to put it together in my mind. Not only am I able to participate in setting
-    up how code will function behind the scenes, but I also get to design how I
-    think it should look on the front-end.
-  </p>
-</main>
-<br id="skills" />
-<Skills />
-<br id="prevexp" />
-<PreviousExperience />
-<br id="projectgrid" />
-<!-- This will be handled by the ProjectGrid component -->
-<ProjectGrid />
-<br id="contact" />
-<ContactInformation />
+<div class="container">
+  <main>
+    <h1>My name is <span>Nicholas Peters</span></h1>
+    <div class="grid twocol">
+      <div class="img-container">
+        <img src="../assets/pictures/nppicture.jpg" alt="" />
+      </div>
+      <br id="aboutme" />
+      <div class="aboutme">
+        <h2>About Me</h2>
+        <p>
+          I am a full-stack developer from Michigan with a love for coffee,
+          tech, and did I mention coffee? I do freelance and contract web
+          development under the company name Popular Nerd over at
+          popularnerd.tech. My educational background is in IT Support but I am
+          a self taught programmer with experience in python, c++, and c#, but
+          most of all, the vast world of
+          <em><strong>web development</strong></em>. when I started teaching
+          myself web development I really found what I had a passion for. The
+          feeling of getting to see something come to life piece by piece as
+          quickly as I am able to put it together in my mind. Not only am I able
+          to participate in setting up how code will function behind the scenes,
+          but I also get to design how I think it should look on the front-end.
+        </p>
+      </div>
+    </div>
+  </main>
+  <br id="skills" />
+  <Skills />
+  <br id="projectgrid" />
+  <ProjectGrid />
+  <br id="prevexp" />
+  <PreviousExperience />
+  <br id="contact" />
+  <ContactInformation />
+</div>
 <Footer />

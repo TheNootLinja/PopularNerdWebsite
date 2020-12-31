@@ -34,14 +34,6 @@
   .pushDown {
     margin-bottom: 25px;
   }
-
-  /* .outline {
-    outline: solid 2px #90a9b7;
-    width: fit-content;
-    margin: auto;
-    padding: 5px 10px;
-  } */
-
   .card {
     width: 95%;
     margin: auto;
@@ -60,5 +52,5 @@
   </div>
   <h2>Curious what I've been working on?</h2>
   <p class="pushDown">Link to my Github</p>
-  <a href="https://www.github.com/thenootlinja">TheNootLinja</a>
+  <a href="https://www.github.com/thenootlinja" target="blank">TheNootLinja</a>
 </div>
