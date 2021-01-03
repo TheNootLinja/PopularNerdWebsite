@@ -55,11 +55,6 @@
     transform: rotate(-45deg) translate(-9px, 6px);
   }
   /* ==================================================== */
-  .nav-icon {
-    margin: 1em;
-    width: 40px;
-  }
-
   /* Fade out the second bar */
   .change .bar2 {
     opacity: 0;
