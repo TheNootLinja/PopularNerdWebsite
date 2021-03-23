@@ -144,10 +144,11 @@
 <div class="container">
   <main>
     <h1>My name is <span>Nicholas Peters</span></h1>
-    <div class="grid twocol">
-      <div class="img-container">
+    <!-- <div class="grid twocol"> -->
+    <div>
+      <!-- <div class="img-container">
         <img src="../assets/pictures/nppicture.jpg" alt="" />
-      </div>
+      </div> -->
       <br id="aboutme" />
       <div class="aboutme">
         <h2>About Me</h2>
