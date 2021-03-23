@@ -79,15 +79,6 @@
     height: 15rem;
     width: 100%;
   }
-
-  .monster-rolodex {
-    background-image: url("../assets/project-thumbnails/monster-rolodex.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15rem;
-    width: 100%;
-  }
   .spacer {
     background-color: rgba(0, 0, 0, 0);
   }
@@ -95,11 +86,16 @@
   .projectdesccont {
     background-color: #333;
     display: none;
+    position: relative;
     text-align: center;
   }
-  .picture-link {
-    height: auto;
-    width: auto;
+  .project-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: auto;
+    margin-bottom: 10px;
   }
 
   @media only screen and (min-width: 600px) {
@@ -130,31 +126,21 @@
       <p class="name">Noot Wear (E-Commerce)</p>
       <div class="spacer" />
       <div class="projectdesccont">
-        <p>Built with</p>
-        <ul>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Firebase Auth</li>
-        </ul>
+        <h4>Noot-Wear</h4>
         <p>An ecommerce site for a fictitious brand, noot-wear.</p>
         <!-- Project link #1 -->
-        <a class="website" target="blank" href="/">See The Live Site</a>
+        <a class="project-link" target="blank" href="/">See The Live Site</a>
       </div>
     </div>
     <div class="project-container">
       <div class="projectdesccont">
         <h4>What's On?</h4>
-        <p>Built with</p>
-        <ul>
-          <li>React</li>
-          <li>MovieDB API</li>
-        </ul>
         <p>
           This is one of the first projects I did when learning React. The app
           hits an api, shows some use of components
         </p>
         <!-- Project link #2 -->
-        <a href="/">See The Live Site</a>
+        <a class="project-link" href="/">See The Live Site</a>
       </div>
       <div class="spacer" />
       <!-- Project picture #2 -->
@@ -171,16 +157,13 @@
       <p class="name">PacMan (Javascript Game)</p>
       <div class="spacer" />
       <div class="projectdesccont">
-        <p>Built with</p>
-        <ul>
-          <li>React</li>
-        </ul>
+        <h4>Meetups</h4>
         <p>
           This is one of the first projects I did when learning React. The app
           hits an api, shows some use of components
         </p>
         <!-- Project link #3 -->
-        <a href="/">See The Live Site</a>
+        <a class="project-link" href="/">See The Live Site</a>
       </div>
     </div>
   </div>

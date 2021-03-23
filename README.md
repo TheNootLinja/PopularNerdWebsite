@@ -1,14 +1,15 @@
 # This is the source code for popularnerd.tech
 
-## Tech Stack
+# Items that need to be fixed on current version of site
 
-    1. Svelte
+    [ ] Finish and host Svelte Meetups App
+        [ ] Fix security problem with firebase DB to allow it to be used with the app again.
+        [ ] Host the App on netlify
+        [ ] Swap out project image #3 with the Meetups app image and make sure the link directs to the hosted site.
+    [ ] Rewrite the about me description to better describe what I do and describe my personality better.
 
-## Things that still need work
+# 2021 Checklist
 
-    1. Need to make github and email be clickable links instead of just text.
-    2. Need to get project files together and hosted to link to them inside of the projects section.
-
-## Changes to projects section
-
-    When viewing the site on a mobile device, I think how we currently have it set up is good but could use some small tweaks when scaling up to bigger screens. I want to find the breakpoint when the project tile starts to look a little bit stretched, and change the layout of projects to be a project tile on the left, then a short description on the right, then flip flopped for each subsequent row. This will give a cool look to the page on larger screens and help us show off the projects better.
+    [ ] Sit down with site and come up with some animations that could be added for flair and give personality to the site.
+    [ ] Draw up a diagram of how a "multi-page" layout could be utilized through creating pop open modals and other components of that nature.
+    [ ]

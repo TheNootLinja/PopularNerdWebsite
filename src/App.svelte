@@ -144,26 +144,24 @@
 <div class="container">
   <main>
     <h1>My name is <span>Nicholas Peters</span></h1>
-    <div class="grid twocol">
-      <div class="img-container">
+    <!-- <div class="grid twocol"> -->
+    <div>
+      <!-- <div class="img-container">
         <img src="../assets/pictures/nppicture.jpg" alt="" />
-      </div>
+      </div> -->
       <br id="aboutme" />
       <div class="aboutme">
         <h2>About Me</h2>
         <p>
-          I am a full-stack developer from Michigan with a love for coffee,
-          tech, and did I mention coffee? I do freelance and contract web
-          development under the company name Popular Nerd over at
-          popularnerd.tech. My educational background is in IT Support but I am
-          a self taught programmer with experience in python, c++, and c#, but
-          most of all, the vast world of
-          <em><strong>web development</strong></em>. when I started teaching
-          myself web development I really found what I had a passion for. The
-          feeling of getting to see something come to life piece by piece as
-          quickly as I am able to put it together in my mind. Not only am I able
-          to participate in setting up how code will function behind the scenes,
-          but I also get to design how I think it should look on the front-end.
+          I am a full-stack developer from Michigan with a love for coffee, tech, 
+          and did I mention coffee? I do freelance and contract web development 
+          under the company name Popular Nerd over at popularnerd.tech. I have a 
+          background in IT Support but I am a self taught programmer with experience 
+          in python, c++, and c#, but most of all, the vast world of 
+          <em><strong>web development</strong></em>. On top of all of that, I currently 
+          build applications and solutions in the Microft Power Platform as a full time 
+          job so I have experience with PowerApps, PowerBI, Power Automate, and other 
+          parts of previously mentioned enviroment.
         </p>
       </div>
     </div>

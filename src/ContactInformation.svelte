@@ -30,13 +30,9 @@
   .a-container {
     padding-top: 1.5rem;
   }
-  
+
   .pushDown {
     margin-bottom: 25px;
-  }
-  .card {
-    width: 95%;
-    margin: auto;
   }
 </style>
 

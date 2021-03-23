@@ -42,7 +42,7 @@
     <ul>
         <li>
             <hr />
-            <h3>App Developer</h3>
+            <h3>Solutions Developer</h3>
             <h4>Principle Services Technologies</h4>
             <p><em>March 2020 - Current</em></p>
             <p>
