@@ -1,20 +1,62 @@
 <script>
-  import Header from "./UI/Header.svelte";
-  import ProjectGrid from "./ProjectGrid.svelte";
-  import ContactInformation from "./ContactInformation.svelte";
-  import Skills from "./Skills.svelte";
-  import Footer from "./UI/Footer.svelte";
-  import PreviousExperience from "./PreviousExperience.svelte";
-  import PopUpMenu from "./UI/PopUpMenu.svelte";
+  import Header from './UI/Header.svelte';
+  import ProjectGrid from './ProjectGrid.svelte';
+  import ContactInformation from './ContactInformation.svelte';
+  import Skills from './Skills.svelte';
+  import Footer from './UI/Footer.svelte';
+  import PreviousExperience from './PreviousExperience.svelte';
+  import PopUpMenu from './UI/PopUpMenu.svelte';
 
   let mobMenuOpen = false;
 
   function openMenu() {
-    console.log("It works!");
+    console.log('It works!');
     mobMenuOpen = !mobMenuOpen;
     console.log(mobMenuOpen);
   }
 </script>
+
+<Header on:openmenu={openMenu} hbOpen={mobMenuOpen} />
+{#if mobMenuOpen}
+  <PopUpMenu on:closemenu={openMenu} />
+{/if}
+<div class="container">
+  <main>
+    <h1>My name is <span>Nicholas Peters</span></h1>
+    <!-- <div class="grid twocol"> -->
+    <div>
+      <!-- <div class="img-container">
+        <img src="../assets/pictures/nppicture.jpg" alt="" />
+      </div> -->
+      <br id="aboutme" />
+      <div class="aboutme">
+        <h2>About Me</h2>
+        <p>
+          I am a full-stack developer from Michigan with a love for coffee,
+          tech, and did I mention coffee? I do freelance and contract web
+          development under the company name Popular Nerd over at
+          popularnerd.tech. I have a background in IT Support but I am a self
+          taught programmer with experience in python, c++, and c#, but most of
+          all, the vast world of
+          <em><strong>web development</strong></em>. On top of all of that, I
+          currently build applications and solutions in the Microft Power
+          Platform as a full time job so I have experience with PowerApps,
+          PowerBI, Power Automate, and other parts of previously mentioned
+          enviroment.
+        </p>
+      </div>
+    </div>
+  </main>
+  <br id="skills" />
+  <Skills />
+  <br id="projectgrid" />
+  <ProjectGrid />
+  <br id="prevexp" />
+  <PreviousExperience />
+  <br id="contact" />
+  <ContactInformation />
+</div>
+<Footer />
 
 <style>
   main {
@@ -136,43 +178,3 @@
     }
   }
 </style>
-
-<Header on:openmenu={openMenu} hbOpen={mobMenuOpen} />
-{#if mobMenuOpen}
-  <PopUpMenu on:closemenu={openMenu} />
-{/if}
-<div class="container">
-  <main>
-    <h1>My name is <span>Nicholas Peters</span></h1>
-    <!-- <div class="grid twocol"> -->
-    <div>
-      <!-- <div class="img-container">
-        <img src="../assets/pictures/nppicture.jpg" alt="" />
-      </div> -->
-      <br id="aboutme" />
-      <div class="aboutme">
-        <h2>About Me</h2>
-        <p>
-          I am a full-stack developer from Michigan with a love for coffee, tech, 
-          and did I mention coffee? I do freelance and contract web development 
-          under the company name Popular Nerd over at popularnerd.tech. I have a 
-          background in IT Support but I am a self taught programmer with experience 
-          in python, c++, and c#, but most of all, the vast world of 
-          <em><strong>web development</strong></em>. On top of all of that, I currently 
-          build applications and solutions in the Microft Power Platform as a full time 
-          job so I have experience with PowerApps, PowerBI, Power Automate, and other 
-          parts of previously mentioned enviroment.
-        </p>
-      </div>
-    </div>
-  </main>
-  <br id="skills" />
-  <Skills />
-  <br id="projectgrid" />
-  <ProjectGrid />
-  <br id="prevexp" />
-  <PreviousExperience />
-  <br id="contact" />
-  <ContactInformation />
-</div>
-<Footer />

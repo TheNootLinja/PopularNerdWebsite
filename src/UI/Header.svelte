@@ -1,15 +1,34 @@
 <script>
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher } from 'svelte';
 
   const dispatch = createEventDispatcher();
 
   export let hbOpen = false;
 
   function handleHbClick() {
-    dispatch("openmenu");
+    dispatch('openmenu');
     hbOpen = !hbOpen;
   }
 </script>
+
+<header>
+  <h1 class="fake-logo">NRP</h1>
+  <nav>
+    <div class="container {hbOpen ? 'change' : ''}" on:click={handleHbClick}>
+      <div class="bar1" />
+      <div class="bar2" />
+      <div class="bar3" />
+    </div>
+    <a href="#aboutme">About</a>
+    <a href="#skills">Blogs</a>
+    <a href="#skills">Skills</a>
+    <a href="#projectgrid">Projects</a>
+    <a href="#contact" class="last">Contact</a>
+    <!-- <div class="nav-icon"> -->
+    <div />
+    <!-- </div> -->
+  </nav>
+</header>
 
 <style>
   header nav a + a {
@@ -86,21 +105,3 @@
     }
   }
 </style>
-
-<header>
-  <h1 class="fake-logo">NRP</h1>
-  <nav>
-    <div class="container {hbOpen ? 'change' : ''}" on:click={handleHbClick}>
-      <div class="bar1" />
-      <div class="bar2" />
-      <div class="bar3" />
-    </div>
-    <a href="#aboutme">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projectgrid">Projects</a>
-    <a href="#contact" class="last">Contact</a>
-    <!-- <div class="nav-icon"> -->
-    <div />
-    <!-- </div> -->
-  </nav>
-</header>
